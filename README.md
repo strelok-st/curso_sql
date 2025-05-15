@@ -1,5 +1,9 @@
 # curso sql
 
+# Tarefas:
+/*Mini projeto 1*/:
+
+/*Mini projeto 2*/:
 
 # Mini-projeto 1: Sistema de Cadastro de Funcionários
 
