@@ -1,61 +1,45 @@
-# curso sql
+# Projeto 01: 
+"""
+📄 Briefing do Cliente: Loja TechZone
+Oi! Me chamo Marcos e sou dono da TechZone, uma loja de eletrônicos e acessórios de informática. Quero montar um sistema simples pra gerenciar nosso estoque, vendas e clientes. Vai ser só pro uso interno da loja por enquanto, então não precisa de tela ou sistema visual ainda — só quero que o banco esteja pronto pra ser usado quando for integrar com algo no futuro.
 
-# Tarefas:
-/*Mini projeto 1*/:
+💼 Preciso que o banco de dados tenha suporte pra:
+Cadastrar os produtos da loja
 
-/*Mini projeto 2*/:
+Cada produto precisa ter nome, preço, estoque atual e categoria (ex: “Notebook”, “Monitor”, “Acessório”).
 
-# Mini-projeto 1: Sistema de Cadastro de Funcionários
+Um produto só pode pertencer a uma categoria, mas uma categoria pode ter vários produtos.
 
-Descrição da tarefa:
-Você deverá projetar e implementar um banco de dados para um sistema interno de cadastro de funcionários. O banco deve conter tabelas para departamentos, funcionários, e cargos.
+Quero começar com umas 3 categorias, mas pretendo adicionar mais depois.
 
-Requisitos:
+Manter um cadastro dos meus clientes
 
-Crie as tabelas com seus respectivos campos, tipos de dados apropriados e relações entre elas.
+Nome completo, e-mail, cidade e telefone.
 
-Utilize chaves primárias e chaves estrangeiras para garantir integridade referencial.
+Um cliente pode comprar várias vezes.
 
-Adicione auto incremento aos campos que precisarem gerar identificadores únicos automaticamente.
+Não quero dois clientes com o mesmo e-mail, beleza?
 
-Use constraints para validar dados como salário mínimo, datas de admissão, e nome obrigatório.
+Registrar cada venda
 
-Após a criação, altere uma tabela existente para incluir um campo novo de e-mail corporativo.
+Uma venda está ligada a um cliente e tem uma data.
 
-Visualize os relacionamentos existentes entre as tabelas para validar sua modelagem.
+Numa venda podem ter vários produtos diferentes.
 
-# Projeto 2: Banco de Dados para Controle de Biblioteca
-Descrição da tarefa:
-Implemente o banco de dados de uma biblioteca universitária. O sistema deverá permitir o controle de livros, autores, empréstimos e alunos.
+Cada produto vendido deve registrar a quantidade e o preço que foi vendido na hora (às vezes tem desconto).
 
-Requisitos:
+Regras que preciso que você garanta no banco:
 
-Crie as tabelas com os campos necessários e utilize os tipos de dados corretos (datas, textos, inteiros, etc).
+Nenhum campo essencial pode ficar em branco (nome do cliente, nome do produto, etc.)
 
-Estabeleça as primary keys e foreign keys para conectar livros a autores e empréstimos a alunos.
+Os códigos dos registros (produtos, vendas, clientes) devem ser gerados automaticamente.
 
-Implemente constraints para garantir que um livro não seja emprestado mais de uma vez ao mesmo tempo.
+O estoque deve ter valor padrão zero, caso eu esqueça de preencher.
 
-Os identificadores de livros, autores e alunos devem ser gerados automaticamente com auto incremento.
+E mais umas paradas pra facilitar minha vida depois:
 
-Altere a tabela de empréstimos para incluir a data prevista de devolução.
+Quero que o banco permita eu fazer consultas tipo: "quais clientes compraram produtos da categoria X", ou "quais produtos foram vendidos em março", etc.
 
-Mostre os relacionamentos entre as tabelas após a modelagem.
+Não sei se isso é possível, mas se puder deixar mais rápido buscar clientes por cidade, agradeço.
+"""
 
-## Projeto 3: Sistema de Vendas de uma Loja Virtual
-Descrição da tarefa:
-Desenvolva a estrutura de um banco de dados que represente o funcionamento básico de uma loja virtual, incluindo produtos, clientes e pedidos.
-
-Requisitos:
-
-Crie as tabelas usando CREATE TABLE, especificando os tipos de dados do MySQL conforme adequado (decimal para preços, varchar para nomes, etc.).
-
-Use auto incremento para os IDs de produtos, clientes e pedidos.
-
-Aplique constraints para garantir que preços não sejam negativos e que o nome do cliente seja obrigatório.
-
-Relacione os pedidos com os produtos e clientes através de foreign keys.
-
-Use ALTER TABLE para adicionar posteriormente um campo de status do pedido (ex: pendente, enviado, entregue).
-
-Visualize e explique os relacionamentos entre todas as tabelas do sistema.
